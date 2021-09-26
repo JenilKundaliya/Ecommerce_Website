@@ -5,7 +5,7 @@ export const listProducts = () => async(dispatch)=>{
         type:actiontypes.GET_PRODUCTS_REQUEST
     })
     try{
-const {data} = await axios.get('/api/products/')
+const {data} = await axios.get('https://ecommercewebsitemernstack.herokuapp.com/api/products/')
 dispatch({
     type:actiontypes.GET_PRODUCTS_SUCCESS,
     payload:data 
@@ -23,7 +23,7 @@ export const detailsProduct = (productID)=> async(dispatch)=>{
         payload:productID
     })
     try{
-        const {data} = await axios.get(`/api/products/${productID}`)
+        const {data} = await axios.get(`https://ecommercewebsitemernstack.herokuapp.com/api/products/${productID}`)
         dispatch({
             type:actiontypes.GET_PRODUCT_DETAIL_SUCCESS,payload:data
         })

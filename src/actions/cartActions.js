@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 export const addToCart = (productID,qty)=> async(dispatch,getState)=>{
-    const {data} = await axios.get(`/api/products/${productID}`)
+    const {data} = await axios.get(`https://ecommercewebsitemernstack.herokuapp.com/api/products/${productID}`)
 dispatch({
     type:actiontypes.ADD_TO_CART,
     payload:{

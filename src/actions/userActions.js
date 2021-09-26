@@ -6,7 +6,7 @@ dispatch({
     type:actiontypes.USER_SIGNIN_REQUEST, payload:{email,password}
 })
 try{
-const {data} = await axios.post('/api/users/signin',{email,password})
+const {data} = await axios.post('https://ecommercewebsitemernstack.herokuapp.com/api/users/signin',{email,password})
 dispatch({
     type:actiontypes.USER_SIGNIN_SUCCESS, payload:data
 })
@@ -24,7 +24,7 @@ export const register = (name,email,password)=>async(dispatch)=>{
         type:actiontypes.USER_REGISTER_REQUEST,payload:{name,email,password}
     })
     try{
-const {data} = await axios.post('/api/users/register',{name,email,password})
+const {data} = await axios.post('https://ecommercewebsitemernstack.herokuapp.com/api/users/register',{name,email,password})
 dispatch({
 type:actiontypes.USER_REGISTER_SUCCESS,payload:data
 })

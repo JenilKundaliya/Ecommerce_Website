@@ -6,7 +6,7 @@ dispatch({type:actiontypes.CREATE_ORDER_REQUEST,payload:order})
 try{
     const {userSignIn:{userInfo}} = getState()
  
-const {data} = await axios.post('/api/orders',order,{
+const {data} = await axios.post('https://ecommercewebsitemernstack.herokuapp.com/api/orders',order,{
     headers:{
         'Authorization':`Bearer ${userInfo.token}`
     }
@@ -41,7 +41,7 @@ export const getMyOrders = ()=>async(dispatch,getState)=>{
     dispatch({type:actiontypes.MINE_ORDERS_REQUEST});
     try{
         const {userSignIn:{userInfo}} = getState();
-        const {data} = await axios.get('/api/mine',userInfo)
+        const {data} = await axios.get('https://ecommercewebsitemernstack.herokuapp.com/api/mine',userInfo)
         dispatch({type:actiontypes.MINE_ORDERS_SUCCESS,payload:data})
         
 
