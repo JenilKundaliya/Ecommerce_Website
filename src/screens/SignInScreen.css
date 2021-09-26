@@ -1,0 +1,72 @@
+.signin__screen{
+    min-height: 80vh;
+    width: 80vw;
+    margin: 10px auto;
+    /* border: 2px solid blue; */
+
+}
+.signin__heading{
+    height: 20%;
+    text-align: center;
+    font-size: 30px;
+}
+.form{
+    min-height: 60vh;
+    /* flex: 0.8; */
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-direction: column;
+}
+.formele{
+    padding: 0.6rem 0.8rem;
+    margin: 0.4rem 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.formele label{
+    font-size: 1.2rem;
+}
+.formele input{
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: 1px solid black;
+    padding: 0.3rem 0.4rem;
+    border-radius:5px ;
+}
+.formele input:focus{
+box-shadow: 3px 4px 9px grey;
+}
+.formele input::placeholder{
+    color: grey;
+    font-size: 14px;
+}
+.formbtn{
+    margin: 0.8rem 1.2rem;
+}
+.formbtn button{
+    margin: 0.7rem 0.6rem;
+    padding: 0.6rem 1rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transition: all 0.4s ease-out;
+    font-size: 16px;
+}
+.formbtn button:hover{
+    cursor: pointer;
+    background: transparent;
+    color: black;
+
+}
+.newcustomer{
+    padding: 0.8rem 0.6rem;
+    font-size: 17px;
+}
+.newcustomer a{
+    text-decoration: none;
+    margin: 0.3rem 0.6rem;
+}

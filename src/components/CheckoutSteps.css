@@ -1,0 +1,16 @@
+.checkout{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.checkout > div{
+    border-top:0.3rem gainsboro solid ;
+    color: rgb(31, 29, 28);
+    padding: 1rem;
+    font-size: 18px;
+}
+.checkout > div.active{
+    border-top-color: orange;
+    color: orange;
+    font-weight: bold;
+}

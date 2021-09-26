@@ -1,0 +1,34 @@
+{
+  "name": "react-todo-app",
+  "proxy":"https://ecommercewebsitemernstack.herokuapp.com/",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.9.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^3.4.1",
+    "immutability-helper": "^2.1.1",
+    "keycode-js": "^0.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "recompose": "^0.23.5",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-react-app"
+    ]
+  }
+}
